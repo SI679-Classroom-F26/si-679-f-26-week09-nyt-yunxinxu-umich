@@ -16,3 +16,11 @@ export const getJwtSecret = (): string => {
 export const getClientOrigin = (): string =>
   process.env.CLIENT_ORIGIN ?? 'http://localhost:5173';
 // #endregion client-origin
+
+// The defaults are your laptop's values; .env can override them.
+export const getPort = (): number => Number(process.env.PORT ?? 6790);
+
+export const getMongoUri = (): string =>
+  process.env.MONGO_URI ?? 'mongodb://127.0.0.1:27017';
+
+export const getDbName = (): string => process.env.DB_NAME ?? 'week9';
