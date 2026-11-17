@@ -27,7 +27,9 @@ export const Header = ({ user, view, onNavigate, onLogout }: Props) => {
       <nav>
         <ul>
           <li>
-            <strong className="brand">☕ Maize & Brew ☕</strong>
+            <strong className="brand" style={{ color: '#FFCB05' }}>
+              ☕ Maize & Brew ☕
+            </strong>
           </li>
           {tabs.map((tab) => (
             <li key={tab.view}>
